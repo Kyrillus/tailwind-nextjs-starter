@@ -34,6 +34,6 @@ Anforderungen:
 ### Koummunikation
 * REST
 
-# Architecture
+## Architecture
 // TODO
 	
