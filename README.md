@@ -33,4 +33,7 @@ Anforderungen:
 * NextJS - code splitting, server side rendering
 ### Koummunikation
 * REST
+
+# Architecture
+// TODO
 	
