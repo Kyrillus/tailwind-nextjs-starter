@@ -4,16 +4,10 @@ import Image from "next/image";
 function Footer() {
     return (
         <div>
-            <footer className="flex h-24 w-full items-center justify-center border-t">
-                <a
-                    className="flex items-center justify-center gap-2"
-                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Powered by{' '}
-                    <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16}/>
-                </a>
+            <footer className="flex flex-row mt-auto h-24 w-full items-center justify-center border-t">
+                <p className="text-gray-500">
+                    © 2019 by STI GmbH. All Rights Reserved. {' '}
+                </p>
             </footer>
         </div>
     );
