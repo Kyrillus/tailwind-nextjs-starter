@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Bewerbungsseite() {
+    const prop = "Assessment Center";
     return (
         <div>
             <div className="relative bg-white overflow-hidden">
@@ -13,10 +14,10 @@ function Bewerbungsseite() {
                                 <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20"
                                          patternUnits="userSpaceOnUse">
                                     <rect className="text-gray-200" x="0" y="0" width="4" height="4"
-                                          fill="currentColor"></rect>
+                                          fill="currentColor"/>
                                 </pattern>
                             </defs>
-                            <rect width="404" height="784" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"></rect>
+                            <rect width="404" height="784" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"/>
                         </svg>
                         <svg
                             className="absolute left-full transform -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2"
@@ -25,10 +26,10 @@ function Bewerbungsseite() {
                                 <pattern id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b" x="0" y="0" width="20" height="20"
                                          patternUnits="userSpaceOnUse">
                                     <rect className="text-gray-200" x="0" y="0" width="4" height="4"
-                                          fill="currentColor"></rect>
+                                          fill="currentColor"/>
                                 </pattern>
                             </defs>
-                            <rect width="404" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"></rect>
+                            <rect width="404" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"/>
                         </svg>
                     </div>
                 </div>
@@ -52,8 +53,8 @@ function Bewerbungsseite() {
                                             type="button" aria-label="Close menu">
                                             <svg className="h-6 w-6" stroke="currentColor" fill="none"
                                                  viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-    d="M6 18L18 6M6 6l12 12"/>
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                                      d="M6 18L18 6M6 6l12 12"/>
                                             </svg>
                                         </button>
                                     </div>
@@ -78,7 +79,9 @@ function Bewerbungsseite() {
                         <div className="text-center">
                             <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                                 <span className="mr-1">Willkommen zu der Bewerbung zum</span>
-                                <br/><span className="text-indigo-600" contentEditable="true">Assessment Center</span>
+                                <br/>
+                                <span className="text-indigo-600">{prop}
+                                </span>
                             </h2>
                             <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">Anim
                                 aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.

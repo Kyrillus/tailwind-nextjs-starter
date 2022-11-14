@@ -1,6 +1,7 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
 import Navbar from "../components/navbar/navbar";
+import Bewerbungsseite from "../components/bewerbung/bewerbungsseite";
 
 const LandingPage: NextPage = () => {
     return (
@@ -16,6 +17,7 @@ const LandingPage: NextPage = () => {
             </Head>
 
             <Navbar/>
+            <Bewerbungsseite/>
         </div>
     )
 }
