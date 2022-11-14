@@ -6,7 +6,7 @@ function Navbar() {
     const toggleProfile = () => {setProfileClicked(!profileClicked)};
     return (
         <div>
-            <nav className="bg-[#2d3a52] shadow">
+            <nav className="bg-stiBlue shadow">
                 <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
                     <div className="flex h-16 justify-between">
                         <div className="lg:hidden"/>
@@ -17,7 +17,7 @@ function Navbar() {
                                      alt=""/>
                             </div>
                             <div className="hidden lg:ml-6 lg:flex">
-                                {navItems.map(item => <a
+                                {navItems.map(item => <a key={item}
                                     className="ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out hover:border-gray-300 focus:border-white focus:outline-none"
                                     href="#">{item}</a>)}
                             </div>
