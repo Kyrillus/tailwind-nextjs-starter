@@ -20,7 +20,7 @@ function Navbar() {
                         <div className="lg:hidden"/>
                         <div className="flex px-2 lg:px-0">
                             <div className="flex flex-shrink-0 items-center">
-                                <img className="h-8 w-auto lg:h-12 cursor-pointer"
+                                <img className="h-10 w-auto lg:h-12 cursor-pointer"
                                      src="/sti-consulting-logo.png"
                                      alt=""/>
                             </div>
@@ -51,7 +51,7 @@ function Navbar() {
                             <div className="relative ml-4 flex-shrink-0">
                                 <div>
                                     <button
-                                        onBlur={ () => setProfileClicked(false)}
+                                        onBlur={() => setProfileClicked(false)}
                                         onClick={toggleProfile}
                                         className={"flex rounded-full border-2 text-sm focus:outline-none " + (profileClicked ? "border-gray-100" : "border-transparent")}
                                         id="user-menu" aria-label="User menu" aria-haspopup="true">
@@ -65,8 +65,10 @@ function Navbar() {
                                     className={"absolute right-12 mt-2 z-10 w-96 origin-top-right rounded-md shadow-lg " + (notificationBellClicked ? 'block' : 'hidden')}>
                                     <div className="shadow-xs rounded-md bg-white py-1" role="menu"
                                          aria-orientation="vertical" aria-labelledby="user-menu">
-                                        <Notification name="Emilia Gates" description="Neue Bewerbung hinzugefügt!" imgsrc="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2.2&amp;w=160&amp;h=160&amp;q=80"/>
-                                        <Notification name="Francis Dera" description="Neue Bewerbung hinzugefügt!" imgsrc="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8;auto=format&amp;fit=facearea&amp;facepad=2.2&amp;w=160&amp;h=160&amp;q=80"/>
+                                        <Notification name="Emilia Gates" description="Neue Bewerbung hinzugefügt!"
+                                                      imgsrc="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2.2&amp;w=160&amp;h=160&amp;q=80"/>
+                                        <Notification name="Francis Dera" description="Neue Bewerbung hinzugefügt!"
+                                                      imgsrc="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8;auto=format&amp;fit=facearea&amp;facepad=2.2&amp;w=160&amp;h=160&amp;q=80"/>
                                     </div>
                                 </div>
                                 {/* Settings Menu */}
